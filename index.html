@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <title>Sliding tile puzzle</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  
+</head>
+<body>
+  <header class="container-fluid">
+  <div id="otherUI">
+    <div id = "scrambleButton" class="scrambleBar"><p id="scrambleText">SCRAMBLE PUZZLE</p></div>
+    <div class="statusbar"><p id="progress">Press "SCRAMBLE PUZZLE" above to begin!</p></div>
+    <div class="statusbar"><p id="boardState">All tiles in correct position.</p></div>
+    <div id="Restart">
+      Restart
+    </div>
+  </div>
+  </header>
+  <section class="container-fluid">
+    <div id="tileBoard">
+    </div>
+   
+  </section>
+  
+  <footer class="container-fluid">
+    <p id="errorMessage"></p>
+  </footer>
+  <!-- Not displayed on screen: the HTML used as template for game tiles. -->
+  <div id="tileTemplateHost" hidden="true">
+    <div class="box">
+      <p class="boxLabel">
+      </p>
+    </div>
+  </div>
+
+  <div class="Main-div">
+    <p class="title">8 Puzzle</p>
+    <div id = "scrambleButton" class="PlayButton">Play</div>
+  </div>
+  
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
